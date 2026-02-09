@@ -18,16 +18,20 @@
       msgIndex = (msgIndex + 1) % funnyMessages.length;
 
       // move button randomly
-      const x = Math.random() * 100 - 50;
-      const y = Math.random() * 60 - 30;
-      noBtn.style.transform = `translate(${x}px, ${y}px)`;
-    });
 
-    yesBtn.addEventListener("click", () => {
-      mainPage.style.display = "none";
-      yesPage.style.display = "flex";
-      startHearts();
-    });
+        const x = Math.random() * 40 - 20; // small horizontal move
+        const y = Math.random() * 30 - 15; // small vertical move
+
+        noBtn.style.transform = `translate(${x}px, ${y}px)`;
+        noBtn.style.transition = "transform 0.2s ease";
+        });
+
+        yesBtn.addEventListener("click", () => {
+        mainPage.style.display = "none";
+        yesPage.style.display = "flex";
+        startHearts();
+        });
+
 
     function startHearts() {
       setInterval(() => {
