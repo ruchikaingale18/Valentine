@@ -19,11 +19,11 @@
 
       // move button randomly
 
-        const x = Math.random() * 40 - 20; // small horizontal move
-        const y = Math.random() * 30 - 15; // small vertical move
+        const x = Math.random() * 10 - 8; // small horizontal move
+        const y = Math.random() * 10 - 8; // small vertical move
 
         noBtn.style.transform = `translate(${x}px, ${y}px)`;
-        noBtn.style.transition = "transform 0.2s ease";
+        noBtn.style.transition = "transform 0.15s ease";
         });
 
         yesBtn.addEventListener("click", () => {
