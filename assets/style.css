@@ -1,0 +1,124 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .container {
+      background: #fff;
+      padding: 30px 25px;
+      border-radius: 20px;
+      text-align: center;
+      width: 100%;
+      max-width: 500px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .teddy {
+      width: 180px;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: 22px;
+      color: #ff4d6d;
+      margin-bottom: 20px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    button {
+      padding: 12px 25px;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    #yesBtn {
+      background: #ff4d6d;
+      color: #fff;
+    }
+
+    #yesBtn:hover {
+      background: #ff1e4d;
+      transform: scale(1.05);
+    }
+
+    #noBtn {
+      background: #f1f1f1;
+      color: #333;
+      position: relative;
+    }
+
+    .funny-text {
+      margin-top: 15px;
+      color: #ff4d6d;
+      font-size: 14px;
+      min-height: 20px;
+    }
+
+    /* YES PAGE */
+    .yes-page {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      animation: fadeIn 1s ease;
+    }
+
+    .yes-page h2 {
+      color: #ff4d6d;
+      margin-top: 15px;
+    }
+
+    .hearts {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .heart {
+      position: absolute;
+      bottom: -20px;
+      font-size: 20px;
+      animation: floatUp 4s linear infinite;
+      opacity: 0.7;
+    }
+
+    @keyframes floatUp {
+      from {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      to {
+        transform: translateY(-100vh) scale(1.5);
+        opacity: 0;
+      }
+    }
