@@ -6,10 +6,10 @@
     const heartsContainer = document.getElementById("hearts");
 
     const funnyMessages = [
-    "Oyeeee! 👀 NO dabaya toh single rehne ka contract sign ho jayega 😜",
-    "Soch le bhai… ye NO life-changing decision hai 😏",
-    "NO? Sach me? Meine ne tera naam blacklist kar diya 💔🧸",
-    "Last warning! Abhi bhi waqt hai… warna story tragic ho jayegi 🧸😭🎬"    ];
+    "NO? Sach me 🤔? Himmat kaise hui No click krne ki 😑💔",
+    "Oyeeee! 👀 Firse NO click kiya 😤 single rehne ka contract sign ho jayega 😒",
+    "Soch le bhai… ye NO life changing decision hai, pachtayega samjha 😠😏",
+    "Last warning! Abhi bhi waqt hai… warna apni story (Tu) khatam ho jayega 🙂🙃"    ];
 
     let msgIndex = 0;
 
